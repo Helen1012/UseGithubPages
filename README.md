@@ -12,6 +12,6 @@ https://helen1012.github.io/UseGithubPages/ <br>  <br>
 https://2dowon.netlify.app/etc/publishing-on-github-pages/
 
 ### 예시 이미지
-![image](https://user-images.githubusercontent.com/64337152/132090731-b0918fe4-b1e3-4204-b0f5-f0d048d55af4.png)
-        
+<img src="https://user-images.githubusercontent.com/64337152/132090731-b0918fe4-b1e3-4204-b0f5-f0d048d55af4.png" width="450">
+
         
