@@ -9,7 +9,9 @@ https://www.youtube.com/watch?v=67stn7Pu7s4  <br>  <br>
 https://helen1012.github.io/UseGithubPages/ <br>  <br>
 
 하단의 사이트를 참고하여 배포하는 법을 배웠습니다. <br>
-https://2dowon.netlify.app/etc/publishing-on-github-pages/
+https://2dowon.netlify.app/etc/publishing-on-github-pages/ <br>  <br>
+
+사용된 영상과 이미지는 저작권이 없는 Pixabay 사이트에서 가져왔습니다. <br>
 
 ### 예시 이미지
 <img src="https://user-images.githubusercontent.com/64337152/132090731-b0918fe4-b1e3-4204-b0f5-f0d048d55af4.png" width="450">
