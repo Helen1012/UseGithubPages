@@ -1,0 +1,244 @@
+:root {
+  /* color */
+  --black-color: #171717;
+  --white-color: #fcfcfc;
+  --red-color: #da0037;
+  --blue-color: #185adb;
+  --gray-light-color: #c7c7c7;
+  --gray-dark-color: #393e46;
+
+  /* padding */
+  --padding: 12px;
+
+  /* font size */
+  --font-large: 18px;
+  --font-medium: 15px;
+  --font-small: 10px;
+  --font-xsmall: 8px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  height: 100%;
+  cursor: pointer;
+  border-style: none;
+  background-color: var(--white-color);
+}
+
+/* ------------------- header ------------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+header .youtube_header_title i {
+  color: var(--red-color);
+  width: 12px;
+}
+
+header .youtube_header_title span {
+  font-size: var(--font-large);
+  padding: 0 8px;
+}
+
+/* ------------------- player ------------------- */
+
+.player {
+  background-color: var(--black-color);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 768px;
+}
+
+/* ------------------- metadata ------------------- */
+
+.metadata {
+  padding: var(--padding);
+}
+
+.metadata .hashtag ul {
+  display: flex;
+}
+
+.metadata .hashtag li {
+  padding: 0 3px;
+  color: var(--blue-color);
+  font-size: 13px;
+}
+
+.metadata .playerTitleAndBtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.metadata .playerTitleAndBtn .moreBtn {
+  font-size: 5px;
+  padding: 5px var(--padding);
+  transition: transform 300ms ease-in-out;
+}
+
+.metadata .playerTitleAndBtn .moreBtn.clicked {
+  transform: rotate(180deg);
+}
+
+.metadata .player_title {
+  font-size: var(--font-medium);
+}
+
+.metadata .player_title.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.metadata .player_date {
+  font-size: var(--font-small);
+  color: var(--gray-light-color);
+}
+
+.metadata .player_icons ul {
+  padding: var(--padding) 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.metadata .player_icons li {
+  display: flex;
+  flex-direction: column;
+}
+
+.metadata .player_icons li i {
+  margin: 0 auto;
+}
+
+.metadata .player_icons li i.click {
+  color: var(--blue-color);
+}
+
+.metadata .youtuber_info {
+  padding: var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--gray-light-color);
+  border-bottom: 1px solid var(--gray-light-color);
+}
+
+.metadata .youtuber_info img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.metadata .youtuber_text {
+  display: flex;
+  padding-right: var(--padding);
+}
+
+.metadata .youtuber_nameAndNum {
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--padding);
+}
+
+.metadata .youtuber_name {
+  font-size: var(--font-medium);
+}
+
+.metadata .youtuber_subNum {
+  font-size: var(--font-small);
+}
+
+.metadata .youtuber_subBtn a {
+  color: var(--gray-dark-color);
+  text-transform: uppercase;
+  font-size: var(--font-small);
+}
+
+/* ------------------- upNext ------------------- */
+
+.upNext {
+  padding: 0 var(--padding);
+}
+
+.upNext span {
+  font-size: var(--font-small);
+}
+
+.upNext Img {
+  width: 120px;
+  flex: 1 1 35%;
+}
+
+.upNext li {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding) 0;
+}
+
+.upNext li i {
+  font-size: 5px;
+  padding: var(--padding) 0;
+  flex: 1 1 5%;
+}
+
+.upNext .upNext_text {
+  padding: 0 var(--padding);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 65%;
+}
+
+.upNext .upNext_text .upNext_title {
+  font-size: 14px;
+}
+
+.upNext .upNext_text .upNext_youtuber,
+.upNext .upNext_text .upNext_views {
+  color: var(--gray-dark-color);
+}
+
+.metadataAndupNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .metadataAndupNext {
+    flex-direction: row;
+  }
+
+  .metadataAndupNext .metadata {
+    flex: 1 50%;
+  }
+
+  .metadataAndupNext .upNext {
+    flex: 1 50%;
+  }
+}
